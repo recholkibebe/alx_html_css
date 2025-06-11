@@ -1,0 +1,38 @@
+/* Body layout */
+body {
+	  display: flex;
+	    flex-direction: column;
+	      height: 100vh; /* ensures full height of viewport */
+	        margin: 0;
+	}
+
+	/* Header and Footer styling (optional for visuals) */
+	header, footer {
+		  background-color: #f0f0f0;
+		    padding: 1em;
+		      text-align: center;
+	      }
+
+	      /* Main layout containing article and aside */
+	      main {
+		        display: flex;
+			  flex-direction: row;
+			    flex: auto; /* takes available space */
+		    }
+
+		    /* Article takes 2/3 of width */
+		    article {
+			      flex: 2;
+			        padding: 1em;
+				  overflow-y: auto;
+				    background-color: #ffffff;
+			    }
+
+			    /* Aside takes 1/3 of width */
+			    aside {
+				      flex: 1;
+				        padding: 1em;
+					  overflow-y: auto;
+					    background-color: #f9f9f9;
+				    }
+
