@@ -1,0 +1,54 @@
+ults-section {
+	  padding: 60px 20px;
+	    background-color: #f0f8ff;
+	      text-align: center;
+      }
+
+      .results-section h2 {
+	        font-size: 2rem;
+		  margin-bottom: 40px;
+	  }
+
+	  .pentagon-container {
+		    display: flex;
+		      justify-content: center;
+		        gap: 40px;
+			  flex-wrap: wrap;
+		  }
+
+		  .pentagon {
+			    position: relative;
+			      width: 120px;
+			        height: 114px;
+				  background: #00bcd4;
+				    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+				      display: flex;
+				        flex-direction: column;
+					  align-items: center;
+					    justify-content: center;
+					      color: white;
+					        transition: transform 0.3s ease;
+					}
+
+					.pentagon .text {
+						  font-size: 1.2rem;
+						    font-weight: bold;
+					    }
+
+					    .pentagon p {
+						      margin-top: 8px;
+						        font-size: 0.9rem;
+						}
+
+						.pentagon:hover {
+							  transform: scale(1.1);
+						  }
+
+						  /* Responsive */
+						  @media (max-width: 768px) {
+							    .pentagon-container {
+								        flex-direction: column;
+									    align-items: center;
+									      }
+								      }
+
