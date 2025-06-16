@@ -1,0 +1,144 @@
+/* Reset default styles */
+* {
+	*   margin: 0;
+	*     padding: 0;
+	*       box-sizing: border-box;
+	*       }
+	*
+	*/* Base font styles */
+	body {
+		  font-family: 'Source Sans Pro', sans-serif;
+		    color: #161616;
+		      background-color: #fff;
+		        line-height: 1.6;
+		}
+
+		/* Container */
+		.container {
+			  max-width: 1000px;
+			    margin: 0 auto;
+			      padding: 20px;
+		      }
+
+		      /* Header Styles */
+		      header {
+			        background-color: #fff;
+				  padding: 20px 0;
+				    text-align: center;
+				      border-bottom: 1px solid #eee;
+			      }
+
+			      header h1 {
+				        font-size: 2.5rem;
+					  color: #161616;
+				  }
+
+				  nav a {
+					    text-decoration: none;
+					      margin: 0 15px;
+					        color: #161616;
+					}
+
+					nav a:hover,
+					nav a:active {
+						  color: #FF6565;
+					  }
+
+					  /* Hero Section */
+					  .hero {
+						    padding: 60px 20px;
+						      text-align: center;
+						        background: #F2F2F2;
+						}
+
+						.hero h2 {
+							  font-size: 2rem;
+							    margin-bottom: 20px;
+						    }
+
+						    .hero p {
+							      max-width: 600px;
+							        margin: 0 auto 30px;
+								  font-size: 1.1rem;
+								    color: #555;
+							    }
+
+							    .hero button {
+								      background-color: #FF6565;
+								        color: #fff;
+									  padding: 12px 25px;
+									    border: none;
+									      border-radius: 5px;
+									        cursor: pointer;
+										  font-weight: bold;
+										    transition: opacity 0.3s ease;
+									    }
+
+									    .hero button:hover,
+									    .hero button:active {
+										      opacity: 0.9;
+									      }
+
+									      /* "What we do" Section */
+									      .what-we-do {
+										        background-color: #fff;
+											  padding: 60px 20px;
+											    text-align: center;
+										    }
+
+										    .what-we-do h2 {
+											      font-size: 2rem;
+											        margin-bottom: 10px;
+											}
+
+											.what-we-do p {
+												  color: #555;
+												    margin-bottom: 40px;
+											    }
+
+											    .services {
+												      display: flex;
+												        flex-wrap: wrap;
+													  gap: 30px;
+													    justify-content: center;
+												    }
+
+												    .service {
+													      width: 250px;
+													        padding: 20px;
+														  text-align: center;
+													  }
+
+													  .service .icon {
+														    font-size: 3rem;
+														      color: #FF6565;
+														        margin-bottom: 10px;
+														}
+
+														.service h3 {
+															  margin-bottom: 10px;
+															    font-size: 1.2rem;
+															      color: #161616;
+														      }
+
+														      .service p {
+															        font-size: 0.95rem;
+																  color: #555;
+															  }
+
+															  /* Responsive Design */
+															  @media screen and (max-width: 480px) {
+																    .services {
+																	        flex-direction: column;
+																		    align-items: center;
+																		      }
+
+																		        .hero h2, .what-we-do h2 {
+																				    font-size: 1.5rem;
+																				      }
+
+																				        .hero p, .what-we-do p {
+																						    font-size: 1rem;
+																						      }
+																					      }
+
