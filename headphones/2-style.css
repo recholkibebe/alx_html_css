@@ -1,0 +1,165 @@
+/* 2-styles.css */
+
+/* RESET & BASE */
+* {
+	*   margin: 0;
+	*     padding: 0;
+	*       box-sizing: border-box;
+	*       }
+	*
+	*       body {
+		*         font-family: 'Source Sans Pro', sans-serif;
+		*           color: #071629;
+		*             background-color: #fff;
+		*               line-height: 1.6;
+		*               }
+		*
+		*               img {
+			*                 max-width: 100%;
+			*                   height: auto;
+			*                   }
+			*
+			*                   .container {
+				*                     max-width: 1000px;
+				*                       margin: 0 auto;
+				*                         padding: 20px;
+				*                         }
+				*
+				*/* HEADER */
+				header {
+					  background-image: url("images/headphones_hero_1.jpg");
+					    background-size: cover;
+					      background-position: center;
+					        padding: 60px 20px;
+						  color: white;
+						    text-align: center;
+					    }
+
+					    header h1 {
+						      font-size: 3rem;
+						        margin-bottom: 20px;
+						}
+
+						header p {
+							  font-size: 1.2rem;
+							    max-width: 600px;
+							      margin: 0 auto 30px;
+						      }
+
+						      header button {
+							        padding: 10px 20px;
+								  font-size: 1rem;
+								    border: none;
+								      background-color: #FF6565;
+								        color: white;
+									  cursor: pointer;
+									    transition: opacity 0.3s;
+								    }
+
+								    header button:hover,
+								    header button:active {
+									      opacity: 0.9;
+								      }
+
+								      /* WHAT WE DO */
+								      .what-we-do {
+									        background-color: #F7F7F7;
+										  text-align: center;
+										    padding: 60px 20px;
+									    }
+
+									    .what-we-do h2 {
+										      font-size: 2.5rem;
+										        margin-bottom: 40px;
+										}
+
+										.services {
+											  display: flex;
+											    flex-wrap: wrap;
+											      justify-content: space-between;
+											        gap: 20px;
+											}
+
+											.service {
+												  flex: 1 1 calc(33% - 20px);
+												    min-width: 250px;
+												      background: white;
+												        padding: 20px;
+													  border-radius: 10px;
+												  }
+
+												  .service i {
+													    font-size: 3rem;
+													      color: #FF6565;
+													        margin-bottom: 20px;
+													}
+
+													.service h3 {
+														  font-size: 1.5rem;
+														    margin-bottom: 10px;
+													    }
+
+													    .service p {
+														      font-size: 1rem;
+														        color: #333;
+														}
+
+														/* OUR RESULTS */
+														.our-results {
+															  padding: 60px 20px;
+															    text-align: center;
+														    }
+
+														    .our-results h2 {
+															      font-size: 2.5rem;
+															        margin-bottom: 20px;
+															}
+
+															.our-results p {
+																  max-width: 600px;
+																    margin: 0 auto 40px;
+																      font-size: 1.1rem;
+															      }
+
+															      .metrics {
+																        display: flex;
+																	  flex-wrap: wrap;
+																	    justify-content: space-around;
+																	      gap: 20px;
+																      }
+
+																      .metric {
+																	        flex: 1 1 150px;
+																		  background: #FF6565;
+																		    color: white;
+																		      padding: 30px 20px;
+																		        border-radius: 10px;
+																		}
+
+																		.metric h3 {
+																			  font-size: 2.5rem;
+																			    margin-bottom: 10px;
+																		    }
+
+																		    .metric p {
+																			      font-size: 1rem;
+																		      }
+
+																		      /* RESPONSIVE */
+																		      @media screen and (max-width: 480px) {
+																			        header h1 {
+																					    font-size: 2rem;
+																					      }
+
+																					        .services,
+																						  .metrics {
+																							      flex-direction: column;
+																							          align-items: center;
+																								    }
+
+																								      .service,
+																								        .metric {
+																										    width: 100%;
+																										        max-width: 300px;
+																											  }
+																										  }
