@@ -1,0 +1,133 @@
+/* Base styles omitted for brevity — use your existing header/footer/contact styles */
+
+/* What we do Section */
+.what-we-do {
+	  padding: 60px 20px;
+	    background-color: #e6f7ff;
+	      text-align: center;
+      }
+
+      .what-we-do h2 {
+	        font-size: 2rem;
+		  margin-bottom: 30px;
+	  }
+
+	  .features-row {
+		    display: flex;
+		      justify-content: center;
+		        gap: 40px;
+			  flex-wrap: wrap;
+		  }
+
+		  .feature-item {
+			    background-color: #00bcd4;
+			      color: white;
+			        padding: 20px 30px;
+				  border-radius: 10px;
+				    font-size: 1.1rem;
+				      font-weight: 600;
+				        cursor: pointer;
+					  animation: bounceIn 1s ease-in-out;
+					    transition: transform 0.3s ease, opacity 0.3s ease;
+				    }
+
+				    .feature-item:hover {
+					      transform: scale(1.1) rotate(2deg);
+					        opacity: 0.9;
+					}
+
+					/* Our Results Section */
+					.results-section {
+						  padding: 60px 20px;
+						    background-color: #f0f8ff;
+						      text-align: center;
+					      }
+
+					      .results-section h2 {
+						        font-size: 2rem;
+							  margin-bottom: 40px;
+							    animation: fadeInUp 1s ease-out;
+						    }
+
+						    .pentagon-container {
+							      display: flex;
+							        justify-content: center;
+								  gap: 40px;
+								    flex-wrap: wrap;
+							    }
+
+							    .pentagon {
+								      position: relative;
+								        width: 120px;
+									  height: 114px;
+									    background: #00bcd4;
+									      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+									        display: flex;
+										  flex-direction: column;
+										    align-items: center;
+										      justify-content: center;
+										        color: white;
+											  transition: transform 0.3s ease, opacity 0.3s ease;
+											    animation: zoomIn 0.8s ease;
+										    }
+
+										    .pentagon:hover {
+											      transform: scale(1.15) rotate(-3deg);
+											        opacity: 0.95;
+											}
+
+											.pentagon .text {
+												  font-size: 1.2rem;
+												    font-weight: bold;
+											    }
+
+											    .pentagon p {
+												      margin-top: 8px;
+												        font-size: 0.9rem;
+												}
+
+												/* Animations */
+												@keyframes bounceIn {
+													  0% {
+														      transform: scale(0.5);
+														          opacity: 0;
+															    }
+															      60% {
+																          transform: scale(1.2);
+																	      opacity: 1;
+																	        }
+																		  100% {
+																			      transform: scale(1);
+																			        }
+																			}
+
+																			@keyframes fadeInUp {
+																				  from {
+																					      opacity: 0;
+																					          transform: translateY(40px);
+																						    }
+																						      to {
+																							          opacity: 1;
+																								      transform: translateY(0);
+																								        }
+																								}
+
+																								@keyframes zoomIn {
+																									  from {
+																										      transform: scale(0.6);
+																										          opacity: 0;
+																											    }
+																											      to {
+																												          transform: scale(1);
+																													      opacity: 1;
+																													        }
+																													}
+
+																													/* Responsive */
+																													@media (max-width: 768px) {
+																														  .features-row, .pentagon-container {
+																															      flex-direction: column;
+																															          align-items: center;
+																																    }
+																															    }
+
