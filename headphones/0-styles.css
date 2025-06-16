@@ -1,0 +1,104 @@
+/* Reset and base styles */
+* {
+	*   margin: 0;
+	*     padding: 0;
+	*       box-sizing: border-box;
+	*       }
+	*
+	*       body {
+		*         font-family: 'Source Sans Pro', sans-serif;
+		*           color: white;
+		*             background-color: #1b1b1b;
+		*             }
+		*
+		*/* Variables */
+		:root {
+			  --primary-color: #ff6565;
+			    --max-width: 1000px;
+		    }
+
+		    /* Container */
+		    .container {
+			      max-width: var(--max-width);
+			        margin: 0 auto;
+				  padding: 20px;
+			  }
+
+			  /* Header styles */
+			  .header {
+				    background-image: url('images/headphones_hero_1.jpg'); /* Adjust name as per your image */
+				      background-size: cover;
+				        background-position: center;
+					  height: 100vh;
+					    display: flex;
+					      flex-direction: column;
+					        justify-content: space-between;
+					}
+
+					.nav-container {
+						  display: flex;
+						    justify-content: space-between;
+						      align-items: center;
+					      }
+
+					      .navbar ul {
+						        list-style: none;
+							  display: flex;
+							    gap: 30px;
+						    }
+
+						    .navbar a {
+							      text-decoration: none;
+							        color: white;
+								  font-weight: bold;
+							  }
+
+							  .navbar a:hover {
+								    color: var(--primary-color);
+							    }
+
+							    .hero {
+								      text-align: center;
+								        margin-top: auto;
+									  padding-bottom: 100px;
+								  }
+
+								  .hero h1 {
+									    font-size: 48px;
+									      margin-bottom: 20px;
+								      }
+
+								      .hero p {
+									        font-size: 20px;
+										  margin-bottom: 30px;
+									  }
+
+									  .btn {
+										    background-color: var(--primary-color);
+										      padding: 15px 30px;
+										        text-decoration: none;
+											  color: white;
+											    font-weight: bold;
+											      border-radius: 4px;
+										      }
+
+										      .btn:hover {
+											        opacity: 0.9;
+											}
+
+											/* Responsive */
+											@media screen and (max-width: 480px) {
+												  .navbar ul {
+													      flex-direction: column;
+													          gap: 15px;
+														    }
+
+														      .hero h1 {
+															          font-size: 32px;
+																    }
+
+																      .hero p {
+																	          font-size: 18px;
+																		    }
+																	    }
+
